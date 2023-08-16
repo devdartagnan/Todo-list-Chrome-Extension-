@@ -1,0 +1,35 @@
+{
+    "name": "Todo list",
+    "version": "1.0.0",
+    "description": "todo list",
+    "manifest_version": 3,
+    "author": "DevDartagnan",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "todo list"
+    },
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "content-script.js"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "matches": [
+                "*://*.mozilla.org/*"
+            ]
+        }
+    ],
+    "icons": {
+        "48": "icons/T.png",
+        "64": "icons/T.png",
+        "128": "icons/T-128.png"
+    }
+}
