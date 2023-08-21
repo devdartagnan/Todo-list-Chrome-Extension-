@@ -1,8 +1,9 @@
 :root {
-    --dark-dark: #222831;
-    --dark-medium: #393E46;
-    --medium: #00ADB5;
-    --light: #EEEEEE;
+    --dark-dark: #0a0908;
+    --dark-medium: #22333b;
+    --medium: #5e503f;
+    --medium-light: #c6ac8f;
+    --light: #eae0d5;
 }
 
 #itemList {
@@ -17,11 +18,12 @@
 }
 
 body {
-    background-color: var(--dark-dark);
+    background-color: var(--dark-medium);
+    color: var(--dark-medium);
     font-family: 'Merriweather', serif;
     font-size: 600;
     margin: 1.225rem;
-    width: 220px;
+    width: 320px;
 }
 
 #list {
@@ -37,6 +39,7 @@ body {
 }
 
 #box-input {
+    background-color: var(--light);
     border: none;
     border-radius: 5px;
     padding: 0.445rem 0.5rem;
@@ -44,7 +47,7 @@ body {
 }
 
 #box-input::placeholder {
-    color: gray;
+    color: var(--dark-dark);
 }
 
 #add {
@@ -72,7 +75,7 @@ body {
 }
 
 #removeBtn:hover {
-    background-color: var(--medium);
+    background-color: var(--medium-light);
     border-radius: 5px;
     color: var(--dark-dark);
     height: 100%;
