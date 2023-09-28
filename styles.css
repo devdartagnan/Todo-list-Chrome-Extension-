@@ -91,6 +91,12 @@ body {
     padding: 0.5rem;
     width: 100%;
 }
-.none{
-    display: none;
+.inputList{
+    display : flex ;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+}
+.inputList::first-letter{
+    text-transform: uppercase;
 }

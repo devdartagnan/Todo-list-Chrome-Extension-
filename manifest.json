@@ -14,19 +14,6 @@
     "permissions": [
         "storage"
     ],
-    "content_scripts": [
-        {
-            "js": [
-                "content-script.js"
-            ],
-            "css": [
-                "styles.css"
-            ],
-            "matches": [
-                "*://*.mozilla.org/*"
-            ]
-        }
-    ],
     "icons": {
         "48": "icons/T.png",
         "64": "icons/T.png",
